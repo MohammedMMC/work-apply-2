@@ -34,6 +34,33 @@ section div h1 {
   font-weight: 700;
 }
 
+/* RTL View */
+
+:dir(rtl) body #infoSection div img {
+  position: absolute;
+  height: 95%;
+  bottom: 0;
+  left: -40px;
+  right: unset;
+  transform: rotateY(181deg);
+}
+
+:dir(rtl) body #infoSection div::before {
+  right: -50px;
+  left: unset;
+}
+
+:dir(rtl) body #infoSection div::after {
+  right: -30px;
+  left: unset;
+}
+
+:dir(rtl) body #loginSection div form input {
+  background-position: right 25px center !important;
+  padding-right: 55px;
+  padding-left: 15px !important;
+}
+
 /* Media queries for responsive design */
 
 @media (max-width: 1350px) {
