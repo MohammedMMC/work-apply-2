@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #5038ed;
+  --primary-color-lite: #9181f4;
+}
+
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", monospace;
+  color: #1c1c1c;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Section styles */
+
+section {
+  min-height: 100vh;
+  width: 50vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+section div h1 {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 1350px) {
+  #infoSection div {
+    width: 40vw !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  #infoSection div h1 {
+    font-size: x-large;
+  }
+  #infoSection div {
+    width: 38vw !important;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+  #infoSection {
+    display: none;
+  }
+  #loginSection {
+    width: auto;
+  }
+  #loginSection div {
+    width: 100% !important;
+    padding: 0 5vw;
+  }
+}

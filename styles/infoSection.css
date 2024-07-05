@@ -1,0 +1,68 @@
+#infoSection {
+  background: linear-gradient(
+    217.64deg,
+    var(--primary-color-lite) -5.84%,
+    var(--primary-color) 106.73%
+  );
+}
+
+#infoSection::before {
+  content: "";
+  background-image: url("../images/bgImage.png");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position-x: left;
+  opacity: 0.08;
+}
+
+#infoSection div {
+  position: relative;
+  z-index: 1;
+  height: 70vh;
+  width: 30vw;
+  background-color: rgb(255 255 255 / 21%);
+  backdrop-filter: blur(10px);
+  border-radius: 46px;
+  border: 1px solid rgb(255 255 255 / 52%);
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#infoSection div h1 {
+  color: #fff;
+}
+
+#infoSection div img {
+  position: absolute;
+  height: 95%;
+  bottom: 0;
+  right: -40px;
+}
+
+#infoSection div::before {
+  content: "";
+  position: absolute;
+  bottom: calc(16%);
+  left: -50px;
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#infoSection div::after {
+  content: "";
+  position: absolute;
+  bottom: calc(16% + 20px);
+  left: -30px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: url("../images/thunderbolt.png");
+  background-size: contain;
+}

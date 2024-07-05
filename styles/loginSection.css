@@ -1,0 +1,136 @@
+#loginSection div {
+  position: relative;
+  width: 30vw;
+}
+
+#loginSection div p {
+  font-weight: 400;
+  font-size: large;
+}
+
+#loginSection div,
+#loginSection div form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+#loginSection div form {
+  width: 100%;
+  gap: 25px;
+}
+
+#loginSection div form input {
+  background-color: rgba(240, 237, 255, 80%);
+  border-radius: 16px;
+  width: 100%;
+  padding: 15px;
+  font-size: large;
+  border: none;
+  outline: none;
+}
+
+#loginSection div form input#username {
+  background-image: url("../images/personIcon.png");
+  background-position: 25px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 55px;
+}
+
+#loginSection div form input#password {
+  background-image: url("../images/lockIcon.png");
+  background-position: 25px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 55px;
+}
+
+#loginSection div form button {
+  background: linear-gradient(
+    99.78deg,
+    var(--primary-color-lite) -5.85%,
+    var(--primary-color) 109.55%
+  );
+  box-shadow: 0px 8px 21px 0px #00000029;
+  font-weight: 700;
+  border: none;
+  border-radius: 16px;
+  padding: 18px 26px;
+  color: #fff;
+  cursor: pointer;
+  font-size: medium;
+  transition: transform 200ms;
+}
+
+#loginSection div form button:hover {
+  transform: scale(110%) rotate(-2deg);
+}
+
+#loginSection div form input::placeholder {
+  color: #1c1c1c;
+  font-size: medium;
+}
+
+#loginSection div p#lwo {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#loginSection div p#lwo::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  background-color: #f0edff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 50%;
+  border-radius: 10px;
+}
+
+#loginSection div p {
+  color: #525252;
+}
+
+#loginSection div p#lwo span {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  padding: 0 5px;
+  color: #525252;
+}
+
+#loginSection div p#lwo span b {
+  color: #1c1c1c;
+}
+
+#loginSection div a {
+  border: 1px solid #f0edff;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: medium;
+  border-radius: 16px;
+  transition: transform 200ms;
+}
+
+#loginSection div a:hover {
+  transform: scale(105%);
+}
+
+
+#loginSection div a img {
+  height: 30px;
+  width: 30px;
+}
